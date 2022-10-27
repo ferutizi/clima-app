@@ -1,7 +1,9 @@
 import useFormulario from "../hooks/useFormulario"
 
 const Formulario = ({ city, setCity }) => {
-    const [formulario, handleChange, reset] = useFormulario({});
+    const [formulario, handleChange, reset] = useFormulario({
+        name: ''
+    });
     const {name} = formulario;
 
     const handleSubmit = (e) => {
