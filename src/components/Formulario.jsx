@@ -1,6 +1,6 @@
 import useFormulario from "../hooks/useFormulario"
 
-const Formulario = ({ city, setCity }) => {
+const Formulario = ({ setCity }) => {
     const [formulario, handleChange, reset] = useFormulario({
         name: ''
     });
@@ -8,11 +8,10 @@ const Formulario = ({ city, setCity }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setCity(city.trim().toLowerCase());
+        setCity(formulario.name.trim().toLowerCase());
         reset();
     }
 
-    console.log(formulario);
     return(
         <form onSubmit={handleSubmit}>
           <input
