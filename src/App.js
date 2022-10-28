@@ -1,3 +1,4 @@
+import './App.scss';
 import { useState } from "react";
 import Formulario from "./components/Formulario";
 import PintarDatos from "./components/PintarDatos";
@@ -7,9 +8,11 @@ function App() {
   
   return (
     <div className="App">
-      <div className="card">
-        <Formulario setCity={setCity}></Formulario>
-        <PintarDatos city={city} />
+      <div className="card__container">
+        <div className='card'>
+          <Formulario setCity={setCity}></Formulario>
+          <PintarDatos city={city} />
+        </div>
       </div>
     </div>
   );

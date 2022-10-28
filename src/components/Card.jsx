@@ -1,3 +1,5 @@
+import './Card.scss'; 
+
 const Card = ({ location }) => {
     return(
         <div className="city__card">

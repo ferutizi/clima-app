@@ -31,7 +31,10 @@ const PintarDatos = ({ city }) => {
         <>
             {location.name
                 ? <Card location={location} />
-                : <div className="city__card"></div>
+                : 
+                    <div className="city__card" style={{maxHeight: '210px', width: 'auto'}}>
+                        <img className="card__img" src={require('../img/sky.jpg')} style={{maxHeight: '210px', width: 'auto'}} />
+                    </div>
             }
         </>
     )
