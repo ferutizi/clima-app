@@ -6,6 +6,9 @@
 .city__results {
     position: relative;
     top: -210px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card__img {
@@ -14,12 +17,22 @@
     z-index: 0;
 }
 
+.elements {
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+}
+
 .city__results {
+    height: 200px;
+    align-content: space-between;
+
     h3 {
         text-align: center;
     }
-
-    div {
-        padding: 10px;
-    }
+    
+    p {
+        font-size: 14px;
+        width: min-content;
+    } 
 }
