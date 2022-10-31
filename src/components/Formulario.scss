@@ -1,12 +1,20 @@
-.card__form {
+.form {
     width: 100%;
     height: 30px;
     display: grid;
     grid-template-columns: 6fr 1fr;
 }
 
-.card__input {
+.form__input {
     width: 100%;
     padding-left: 10px;
     font-size: 18px;
+}
+
+.form__button {
+    background-color: #fff;
+    border: solid 1px gray;
+    border-radius: 4px;
+    font-size: 15px;
+    height: 35px;
 }

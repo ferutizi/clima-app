@@ -14,9 +14,9 @@ const Formulario = ({ setCity }) => {
     }
 
     return(
-        <form onSubmit={handleSubmit} className="card__form">
+        <form onSubmit={handleSubmit} className="form">
           <input
-            className="card__input"
+            className="form__input"
             name="name"
             type="text"
             placeholder="city"
@@ -25,7 +25,7 @@ const Formulario = ({ setCity }) => {
             autoFocus
           >
           </input>
-          <button type="submit" className="card__button">B</button>
+          <button type="submit" className="form__button">🔍</button>
         </form>
     )
 }
