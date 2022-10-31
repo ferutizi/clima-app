@@ -1,3 +1,4 @@
+import './Formulario.scss';
 import useFormulario from "../hooks/useFormulario"
 
 const Formulario = ({ setCity }) => {
@@ -13,8 +14,9 @@ const Formulario = ({ setCity }) => {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="card__form">
           <input
+            className="card__input"
             name="name"
             type="text"
             placeholder="city"
@@ -23,7 +25,7 @@ const Formulario = ({ setCity }) => {
             autoFocus
           >
           </input>
-          <button type="submit">buscar</button>
+          <button type="submit" className="card__button">B</button>
         </form>
     )
 }

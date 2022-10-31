@@ -2,7 +2,7 @@ import './Card.scss';
 
 const Card = ({ location }) => {
     return(
-        <div className="city__card">
+        <div className="city__results">
             <h3>{location.name} - {location.sys?.country}</h3>
             <div>
                 <p>minima:{location.main?.temp_min}</p>

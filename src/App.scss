@@ -1,10 +1,13 @@
 .card__container {
-    height: 100vh;
-    width: auto;
+    height: 15rem;
+    width: 20rem;
     background-color: aqua;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+}
+
+.App {
+    height: 100vh;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }

@@ -1,13 +1,25 @@
 .city__card {
     width: 100%;
-    background-image: url('../img/sky.jpg');
     background-color: rgba(0,0,0,0.0);
 }
 
-.city__card h3 {
-    margin: 0;
+.city__results {
+    position: relative;
+    top: -210px;
 }
 
 .card__img {
-    opacity: 0;
+    width: 100%;
+    filter: brightness(0.8);
+    z-index: 0;
+}
+
+.city__results {
+    h3 {
+        text-align: center;
+    }
+
+    div {
+        padding: 10px;
+    }
 }

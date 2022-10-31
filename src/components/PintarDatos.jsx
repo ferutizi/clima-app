@@ -1,3 +1,4 @@
+import './PintarDatos.scss';
 import { useEffect } from "react";
 import { useState } from "react";
 import Card from "./Card";
@@ -28,15 +29,13 @@ const PintarDatos = ({ city }) => {
     }
 
     return(
-        <>
+        <div className="city__card" >
+        <img className="card__img" src={require('../img/sky.jpg')} />
             {location.name
                 ? <Card location={location} />
-                : 
-                    <div className="city__card" style={{maxHeight: '210px', width: 'auto'}}>
-                        <img className="card__img" src={require('../img/sky.jpg')} style={{maxHeight: '210px', width: 'auto'}} />
-                    </div>
+                : null
             }
-        </>
+        </div>
     )
 }
 
