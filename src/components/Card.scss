@@ -4,36 +4,41 @@
     background-color: rgba(0,0,0,0.0);
 }
 
-.city__results {
-    position: relative;
-    top: -210px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .card__img {
     width: 100%;
+    height: inherit;
     filter: brightness(0.9);
     z-index: 0;
 }
 
 .elements {
     padding: 10px;
-    gap: 10px;
+    gap: 16px;
     display: flex;
 }
 
 .city__results {
-    height: 200px;
-    align-content: space-between;
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    top: -14.37rem;
+    height: 220px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
     h3 {
         text-align: center;
+        font-size: 24px;
+        color: #ddd;
+        text-shadow: 4px 3px 6px #000;
     }
-    
     p {
-        font-size: 14px;
-        width: min-content;
+        font-size: 1rem;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     } 
+}
+
+.imagen__clima {
+    width: 50px;
 }

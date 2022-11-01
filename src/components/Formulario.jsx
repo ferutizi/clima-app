@@ -3,14 +3,14 @@ import useFormulario from "../hooks/useFormulario"
 
 const Formulario = ({ setCity }) => {
     const [formulario, handleChange, reset] = useFormulario({
-        name: ''
+      name: ''
     });
     const {name} = formulario;
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        setCity(formulario.name.trim().toLowerCase());
-        reset();
+      e.preventDefault();
+      setCity(formulario.name.trim().toLowerCase());
+      reset();
     }
 
     return(

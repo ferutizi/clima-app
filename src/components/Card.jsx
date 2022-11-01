@@ -1,5 +1,6 @@
 import './Card.scss'; 
 import Elements from './Elements';
+import Imagen from './Imagen';
 
 const Card = ({ location }) => {
 
@@ -15,6 +16,7 @@ const Card = ({ location }) => {
     return(
         <div className="city__results">
             <h3>{location.name} - {location.sys?.country}</h3>
+            <Imagen sky={location.weather[0]?.description} className="imagen__clima" />
             <div className='elements'>
                 <Elements
                     elementName={'min'}
@@ -30,7 +32,7 @@ const Card = ({ location }) => {
                 />
                 <Elements
                     elementName={'wind'}
-                    elementDescription={`${speed} Km/s`} 
+                    elementDescription={`${speed} Km/h`} 
                 />
             </div>
         </div>

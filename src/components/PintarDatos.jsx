@@ -16,7 +16,6 @@ const PintarDatos = ({ city }) => {
         try {
             const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${ApiKey}&units=metric`)
             const data = await res.json();
-            console.log(data);
             setLocation(data);
             if(!res.ok) {
                 return alert('la ciudad especificada no se ha encontrado')
