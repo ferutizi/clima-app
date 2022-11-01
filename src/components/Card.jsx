@@ -7,11 +7,11 @@ const Card = ({ location }) => {
             <h3>{location.name} - {location.sys?.country}</h3>
             <div className='elements'>
                 <Elements
-                    elementName={'max'}
+                    elementName={'min'}
                     elementDescription={`${location.main?.temp_min} °C`} 
                 />
                 <Elements
-                    elementName={'min'}
+                    elementName={'max'}
                     elementDescription={`${location.main?.temp_max} °C`} 
                 />
                 <Elements
